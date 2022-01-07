@@ -1,0 +1,46 @@
+<html manifest="cache.manifest">
+ <head>
+    <title>KRANSHE 9.00 (V1) JB+GoldHEN v2.0b</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color:#000024;background-image:url(bg1.png);
+			background-attachment:fixed;
+			background-size:100%;
+			background-repeat:no-repeat;
+			text-align:center}
+        .info {
+            overflow: hidden;
+            position: fixed;
+            position: absolute;
+            top: 57%;
+            left: 50%;
+            font-size: 30px;
+            font-family: sans-serif;
+            color: #6089f6;
+            transform: translate(-50%, -50%);}
+    </style>
+    <script>
+        function allset() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("allset").style.display = "block";}
+        function awaitpl() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("awaiting").style.display = "block";}
+    </script>
+    <script src="payload.js"></script>
+    <script src="./int64.js"></script>
+    <script src="./rop.js"></script>
+    <script src="./kexploit.js"></script>
+    <script src="./webkit.js"></script>
+</head>
+<body onload="setTimeout(poc, 1500);">
+	<div id="loader" class="info">Running the webkit... <font color="#ee596f">please wait!!!</font><br><br><br><br><br><br></div>
+    <div id="loader" class="loader"></div>
+	<div id="awaiting" class="info" style="display:none;font-size:28px;">
+	        <font color="#ee596f">The operation</font>was completed<font color="#ee596f">successfully</font>!!!<br><br>Press the button<font color="#ee596f">O</font>to get out.<br><br><font color="#ee596f">Comments:</font><br><font color="#ee596f">1.</font>Don't forget to<font color="#ee596f">remove</font> the USB;<br>
+		<font color="#ee596f">2.</font>Can turn off network, this host works <font color="#ee596f">off-line</font>;<br><font color="#ee596f">3.</font>If the GolgHEN<font color="#ee596f">fails,</font> repeat the entire operation, <font color="#ee596f"></font> <font color="#ee596f"></font></div>
+	<div style="text-align:left;position:fixed;left:10px;bottom:10px;width:100%;font-size:22px;color:#fff">Special thanks: <font color="#6089f6">TheFloW-karo-Sleirsgoevy-SiSTRo- and everyone who contributed to the scene.</font></div>
+
+
+</body></html>
